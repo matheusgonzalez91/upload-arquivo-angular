@@ -1,0 +1,8 @@
+<div class="container">
+  <label for="fileInput">
+    Escolha um arquivo
+    <input type="file" (change)="onFileSelected($event)" id="fileInput" />
+  </label>
+  <ng-progress class=".progressbar-progress" id="myProgress"></ng-progress>
+  <button (click)="onUpload()" class="btn btn-success">Enviar</button>
+</div>
